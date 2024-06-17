@@ -12,7 +12,7 @@
 
 ## Work of project through terminal
 
-- Had a folder only with two files (`main.cpp`, `caesar.cpp`). Compile .cpp into object files
+- Have a folder only with two files (`main.cpp`, `caesar.cpp`). Compile .cpp into object files
   
 ![Снимок экрана 2024-06-17 в 9 11 28 PM](https://github.com/SofiiaChurikova/Caesar-Encryption-Algorithm/assets/150338552/d5caad34-7875-42fb-946b-d6058a9fcf2d)
 
@@ -24,3 +24,20 @@
 - In result can work with program through terminal
 
 ![Снимок экрана 2024-06-17 в 9 18 46 PM](https://github.com/SofiiaChurikova/Caesar-Encryption-Algorithm/assets/150338552/9e2e7d4c-065e-4074-996c-b8fa08803294)
+
+
+## Additional task with static library
+
+- Again have a folder only with two files (`main.cpp`, `caesar.cpp`). Compile .cpp into object files
+
+![Снимок экрана 2024-06-18 в 12 22 41 AM](https://github.com/SofiiaChurikova/Caesar-Encryption-Algorithm/assets/150338552/5ad7d3a7-4287-4d0a-af9d-d5e6430eb8ee)
+
+
+- Create a static lib using `ar rcs` from `caesar.o` and link `main.o` with dynamic library to create executable `main`
+
+![Снимок экрана 2024-06-18 в 12 25 56 AM](https://github.com/SofiiaChurikova/Caesar-Encryption-Algorithm/assets/150338552/ad470321-c833-445e-b12c-0c69a912ebab)
+
+- In result can work with program through terminal
+
+![Снимок экрана 2024-06-18 в 12 27 00 AM](https://github.com/SofiiaChurikova/Caesar-Encryption-Algorithm/assets/150338552/5311be75-c533-483e-a05b-e19a5c23c7ce)
+
