@@ -9,6 +9,16 @@
 
 ![Снимок экрана 2024-06-17 в 8 33 31 PM](https://github.com/SofiiaChurikova/Caesar-Encryption-Algorithm/assets/150338552/13001ec4-1574-428a-a46b-3b8cddb084e5)
 
+- Usage with capital letters
+
+![Снимок экрана 2024-06-18 в 12 48 51 AM](https://github.com/SofiiaChurikova/Caesar-Encryption-Algorithm/assets/150338552/456b1ace-3bf1-4394-bb71-9676fc2b3e50)
+
+![Снимок экрана 2024-06-18 в 12 49 38 AM](https://github.com/SofiiaChurikova/Caesar-Encryption-Algorithm/assets/150338552/dfd4a7aa-65d3-4705-b787-926500a03806)
+
+- Usage with negative key
+
+![Снимок экрана 2024-06-18 в 12 58 59 AM](https://github.com/SofiiaChurikova/Caesar-Encryption-Algorithm/assets/150338552/21753ef5-fa5c-4056-a577-b3042cac0aae)
+
 
 ## Work of project through terminal
 
