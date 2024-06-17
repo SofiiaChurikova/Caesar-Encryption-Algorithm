@@ -12,9 +12,17 @@ char *Encrypt(char *rawText, int key) {
 
         if (isalpha(element)) {
             if (islower(element)) {
-                encryptedText[i] = (element - 'a' + key) % 26 + 'a';
+                encryptedText[i] = (element - 'a' + key) % 26;
+                if (encryptedText[i] < 0) {
+                    encryptedText[i] += 26;
+                }
+                encryptedText[i] += 'a';
             } else {
-                encryptedText[i] = (element - 'A' + key) % 26 + 'A';
+                encryptedText[i] = (element - 'A' + key) % 26;
+                if (encryptedText[i] < 0) {
+                    encryptedText[i] += 26;
+                }
+                encryptedText[i] += 'A';
             }
         } else {
             encryptedText[i] = element;
@@ -27,14 +35,23 @@ char *Encrypt(char *rawText, int key) {
 char *Decrypt(char *encryptedText, int key) {
     int length = strlen(encryptedText);
     char *decryptedText = new char[length + 1];
+
     for (int i = 0; i < length; i++) {
         char element = encryptedText[i];
 
         if (isalpha(element)) {
             if (islower(element)) {
-                decryptedText[i] = (element - 'a' - key + 26) % 26 + 'a';
+                decryptedText[i] = (element - 'a' - key) % 26;
+                if (decryptedText[i] < 0) {
+                    decryptedText[i] += 26;
+                }
+                decryptedText[i] += 'a';
             } else {
-                decryptedText[i] = (element - 'A' - key + 26) % 26 + 'A';
+                decryptedText[i] = (element - 'A' - key) % 26;
+                if (decryptedText[i] < 0) {
+                    decryptedText[i] += 26;
+                }
+                decryptedText[i] += 'A';
             }
         } else {
             decryptedText[i] = element;
@@ -43,6 +60,7 @@ char *Decrypt(char *encryptedText, int key) {
     decryptedText[length] = '\0';
     return decryptedText;
 }
+
 
 int main() {
     int choice;
